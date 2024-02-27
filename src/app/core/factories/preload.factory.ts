@@ -14,7 +14,6 @@ export function PreloadFactory(configService: AppConfigLoaderService) {
           if (appConfig) {
             // eslint-disable-next-line no-console
             console.log(`App's preload factory loaded app config`);
-
             return;
           }
 

@@ -5,7 +5,7 @@ import {
   carouselReducer,
   companyInNumsReducer,
   contactNumsReducer,
-  fincubeReducer,
+  developerCompanyReducer,
   govSitesReducer,
   partnersReducers,
   socialsReducer,
@@ -72,8 +72,8 @@ export interface ISocialsState {
   error: string | null;
 }
 
-export interface IFincubeState {
-  fincube: DevelopingCompanyInfo | null;
+export interface IDeveloperCompanyState {
+  developerCompany: DevelopingCompanyInfo | null;
   error: string | null;
 }
 
@@ -92,7 +92,7 @@ export interface IAppState {
   products: IProductsState;
   contactNums: IContactNumsState;
   socials: ISocialsState;
-  fincube: IFincubeState;
+  developerCompany: IDeveloperCompanyState;
   govSites: IGovSitesState;
 }
 
@@ -106,7 +106,7 @@ export const reducers: ActionReducerMap<IAppState> = {
   products: productsReducer,
   contactNums: contactNumsReducer,
   socials: socialsReducer,
-  fincube: fincubeReducer,
+  developerCompany: developerCompanyReducer,
   govSites: govSitesReducer,
 };
 

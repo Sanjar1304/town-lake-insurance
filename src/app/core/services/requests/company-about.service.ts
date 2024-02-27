@@ -77,10 +77,10 @@ export class CompanyAboutService {
     );
   }
 
-  public getFincubeInfo(): Observable<DevelopingCompanyInfo> {
+  public getDeveloperCompanyInfo(): Observable<DevelopingCompanyInfo> {
     return this._http.get<DevelopingCompanyInfo>(
       "/assets/mock-data",
-      "fincube-logo.json"
+      "town-lake.json"
     );
   }
 }

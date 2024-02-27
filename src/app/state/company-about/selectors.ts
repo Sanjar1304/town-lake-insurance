@@ -5,7 +5,7 @@ import {
   ICarouselState,
   ICompanyInNumsState,
   IContactNumsState,
-  IFincubeState,
+  IDeveloperCompanyState,
   IGovSitesState,
   IPartnerState,
   ISocialsState,
@@ -89,15 +89,16 @@ export const errorSocialSelector = createSelector(
   (state) => state.socials
 );
 
-export const selectedFincube = (state: IAppState): IFincubeState =>
-  state.fincube;
-export const fincubeSelector = createSelector(
-  selectedFincube,
-  (state) => state.fincube
+export const selectedDeveloperCompany = (
+  state: IAppState
+): IDeveloperCompanyState => state.developerCompany;
+export const developerCompanySelector = createSelector(
+  selectedDeveloperCompany,
+  (state) => state.developerCompany
 );
-export const errorFincubeSelector = createSelector(
-  selectedFincube,
-  (state) => state.fincube
+export const errorDeveloperCompanySelector = createSelector(
+  selectedDeveloperCompany,
+  (state) => state.developerCompany
 );
 
 export const selectedGovSites = (state: IAppState): IGovSitesState =>

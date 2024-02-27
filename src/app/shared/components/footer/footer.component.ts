@@ -10,13 +10,13 @@ import { ContactNumsInterface } from "@shared/components/footer/interfaces/conta
 import { select, Store } from "@ngrx/store";
 import {
   getContactNums,
-  getFincubeInfo,
+  getDeveloperCompanyInfo,
   getGovSites,
   getSocials,
 } from "../../../state/company-about/actions";
 import {
   contactNumsSelector,
-  fincubeSelector,
+  developerCompanySelector,
   govSitesSelector,
   socialSelector,
 } from "../../../state/company-about/selectors";
@@ -47,14 +47,16 @@ export class FooterComponent implements OnInit {
   public defineData(): void {
     this.contactNumbers$ = this._store.pipe(select(contactNumsSelector));
     this.socials$ = this._store.pipe(select(socialSelector));
-    this.developingCompInfo$ = this._store.pipe(select(fincubeSelector));
+    this.developingCompInfo$ = this._store.pipe(
+      select(developerCompanySelector)
+    );
     this.govSites$ = this._store.pipe(select(govSitesSelector));
   }
 
   public launchDispatching(): void {
     this._store.dispatch(getContactNums());
     this._store.dispatch(getSocials());
-    this._store.dispatch(getFincubeInfo());
+    this._store.dispatch(getDeveloperCompanyInfo());
     this._store.dispatch(getGovSites());
   }
 }

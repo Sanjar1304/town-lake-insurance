@@ -1,12 +1,12 @@
 [
   {
-    "icon": "/assets/icons/logos/apex-insurance-header-logo.svg",
-    "name": "apex insurance",
+    "icon": "/assets/icons/logos/townlike-white-logo.png",
+    "name": "town lake insurance",
     "identifier": "header"
   },
   {
-    "icon": "/assets/icons/logos/apex-logo-footer-logo.svg",
-    "name": "apex insurance",
+    "icon": "/assets/icons/logos/town-lake-dark-logo.png",
+    "name": "town lake insurance",
     "identifier": "footer"
   }
 ]

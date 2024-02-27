@@ -77,7 +77,7 @@ export const navMenus: NavMenuItem[] = [
     params: SubHeaderEnum.Business,
     content: [
       {
-        category: "Cтрахование имущество",
+        category: "Cтрахование имущества",
         subContent: [
           {
             title: "Страхование имущества, переданного в лизинг",
@@ -186,34 +186,6 @@ export const navMenus: NavMenuItem[] = [
       {
         title: "Организационная структура",
         path: "/about-us/organisational-structure",
-      },
-      {
-        title: "Акционерам и инвесторам",
-        path: "/about-us/shareholders",
-      },
-      {
-        title: "Опрос",
-        path: "/about-us/social-survey",
-      },
-      {
-        title: "Спонсорские проекты",
-        path: "/about-us/sponsorship-projects",
-      },
-      {
-        title: "Наблюдательный совет",
-        path: "/about-us/supervisory-board",
-      },
-      {
-        title: "Задачи, миссия и ценности",
-        path: "/about-us/tasks-mission",
-      },
-      {
-        title: "Тендеры",
-        path: "/about-us/tenders",
-      },
-      {
-        title: "Вакансии",
-        path: "/about-us/vacancies",
       },
     ],
   },

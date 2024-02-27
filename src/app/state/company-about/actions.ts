@@ -92,13 +92,15 @@ export const getSocialsFailure = createAction(
   }>()
 );
 
-export const getFincubeInfo = createAction("[FincubeInfo] Get fincube info");
-export const getFincubeInfoSuccess = createAction(
-  "[FincubeInfo] Get fincube info success",
-  props<{ fincube: DevelopingCompanyInfo }>()
+export const getDeveloperCompanyInfo = createAction(
+  "[Developer Company Info] Get developer company info"
 );
-export const getFincubeInfoFailure = createAction(
-  "[FincubeInfo] Get fincube info failure",
+export const getDeveloperCompanyInfoSuccess = createAction(
+  "[Developer Company Info] Get developer company info success",
+  props<{ developerCompany: DevelopingCompanyInfo }>()
+);
+export const getDeveloperCompanyInfoFailure = createAction(
+  "[Developer Company Info] Get developer company info failure",
   props<{ error: string }>()
 );
 

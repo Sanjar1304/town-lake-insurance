@@ -157,19 +157,19 @@ export class companyAboutEffect {
     );
   });
 
-  private loadFincubeInfo$ = createEffect(() => {
+  private loadDeveloperCompanyInfo$ = createEffect(() => {
     return this._actions$.pipe(
-      ofType(CompanyAboutActions.getFincubeInfo),
+      ofType(CompanyAboutActions.getDeveloperCompanyInfo),
       mergeMap(() => {
-        return this._companyAboutService.getFincubeInfo().pipe(
+        return this._companyAboutService.getDeveloperCompanyInfo().pipe(
           map((response: DevelopingCompanyInfo) => {
-            return CompanyAboutActions.getFincubeInfoSuccess({
-              fincube: response,
+            return CompanyAboutActions.getDeveloperCompanyInfoSuccess({
+              developerCompany: response,
             });
           }),
           catchError((error) =>
             of(
-              CompanyAboutActions.getFincubeInfoFailure({
+              CompanyAboutActions.getDeveloperCompanyInfoFailure({
                 error: error.message,
               })
             )

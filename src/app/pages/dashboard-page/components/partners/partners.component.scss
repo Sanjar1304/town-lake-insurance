@@ -11,7 +11,8 @@
     }
 
     &__block {
-      @include flex(row, flex-start, space-between);
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
       width: 1440px;
     }
   }

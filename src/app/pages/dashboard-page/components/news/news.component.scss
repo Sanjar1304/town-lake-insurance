@@ -42,6 +42,10 @@
 
           &_img {
             cursor: pointer;
+            height: 320px;
+            width: 464px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
           }
 
           &_date {

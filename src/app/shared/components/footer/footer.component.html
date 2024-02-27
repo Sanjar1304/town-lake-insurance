@@ -85,25 +85,25 @@
     <div class="footer__content__fourth">
       <div class="footer__content__fourth__items">
         <p class="footer__content__fourth__items_copyright">
-          © Apex Insurance Company 2024
+          © Town Lake Insurance Company 2024
         </p>
         <p class="footer__content__fourth__items_text">
-          При использовании материалов сайта ссылка на веб-сайт apexinsurance.uz
+          При использовании материалов сайта ссылка на веб-сайт town-lake.uz
           обязательна. <br />
           Лицензия Агентства по развитию страхового рынка при Министерстве
-          финансов Республики Узбекистан серии СФ № 00030 от 18.02.2022 года.
+          финансов Республики Узбекистан серии СФ № 00000000 от 00.00.0000 года.
         </p>
       </div>
       <a
-        *ngIf="developingCompInfo$ | async as fincube"
+        *ngIf="developingCompInfo$ | async as town"
         class="footer__content__fourth_logo"
-        [href]="fincube.url"
+        [href]="town.url"
         target="_blank"
       >
         <img
           class="footer__content__fourth_logo_item"
-          [src]="fincube.icon"
-          [alt]="fincube.name"
+          [src]="town.icon"
+          [alt]="town.name"
         />
       </a>
     </div>

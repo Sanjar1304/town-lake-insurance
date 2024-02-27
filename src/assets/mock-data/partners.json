@@ -1,26 +1,26 @@
 [
   {
-    "icon": "/assets/mock-data/mock-images/partners/golden-house.png",
-    "titlename": "golden-house logo"
+    "icon": "/assets/mock-data/mock-images/partners/logo-1.png",
+    "titlename": "logo 1"
   },
   {
-    "icon": "/assets/mock-data/mock-images/partners/uzengeering.png",
-    "name": "uzengeering logo"
+    "icon": "/assets/mock-data/mock-images/partners/logo-2.png",
+    "name": "logo 2"
   },
   {
-    "icon": "/assets/mock-data/mock-images/partners/egis.png",
-    "name": "egis logo"
+    "icon": "/assets/mock-data/mock-images/partners/logo-3.png",
+    "name": "logo 3"
   },
   {
-    "icon": "/assets/mock-data/mock-images/partners/innotech.png",
-    "name": "innotech logo"
+    "icon": "/assets/mock-data/mock-images/partners/logo-4.png",
+    "name": "logo 4"
   },
   {
-    "icon": "/assets/mock-data/mock-images/partners/mall.png",
-    "name": "mall logo"
+    "icon": "/assets/mock-data/mock-images/partners/logo-5.png",
+    "name": "logo 5"
   },
   {
-    "icon": "/assets/mock-data/mock-images/partners/alfa-tour.png",
-    "name": "alfa-tour logo"
+    "icon": "/assets/mock-data/mock-images/partners/logo-6.png",
+    "name": "logo 6"
   }
 ]

@@ -5,7 +5,7 @@ import {
   ICarouselState,
   ICompanyInNumsState,
   IContactNumsState,
-  IFincubeState,
+  IDeveloperCompanyState,
   IGovSitesState,
   IPartnerState,
   ISocialsState,
@@ -40,8 +40,8 @@ export const initialSocials: ISocialsState = {
   socials: null,
   error: null,
 };
-export const initialFincube: IFincubeState = {
-  fincube: null,
+export const initialDeveloperCompany: IDeveloperCompanyState = {
+  developerCompany: null,
   error: null,
 };
 
@@ -155,16 +155,16 @@ export const socialsReducer = createReducer(
   }))
 );
 
-export const fincubeReducer = createReducer(
-  initialFincube,
-  on(companyAboutActions.getFincubeInfo, (state) => ({
+export const developerCompanyReducer = createReducer(
+  initialDeveloperCompany,
+  on(companyAboutActions.getDeveloperCompanyInfo, (state) => ({
     ...state,
   })),
-  on(companyAboutActions.getFincubeInfoSuccess, (state, action) => ({
+  on(companyAboutActions.getDeveloperCompanyInfoSuccess, (state, action) => ({
     ...state,
-    fincube: action.fincube,
+    developerCompany: action.developerCompany,
   })),
-  on(companyAboutActions.getFincubeInfoFailure, (state, action) => ({
+  on(companyAboutActions.getDeveloperCompanyInfoFailure, (state, action) => ({
     ...state,
     error: action.error,
   }))

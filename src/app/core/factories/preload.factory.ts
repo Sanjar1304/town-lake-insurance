@@ -20,12 +20,12 @@ export function PreloadFactory(configService: AppConfigLoaderService) {
 
           return throwError(
             () => new Error(`FATAL ERROR!!! App's preload factory failed`)
-          ); //TODO. Stop app initialization.
+          );
         },
         error: () => {
           return throwError(
             () => new Error(`FATAL ERROR!!! App's preload factory failed`)
-          ); //TODO. Stop app initialization.
+          );
         },
       });
 }

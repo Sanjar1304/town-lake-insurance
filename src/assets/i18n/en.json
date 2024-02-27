@@ -1,0 +1,20 @@
+{
+  "ErrorPage": {
+    "404": {
+      "Title": "Something went wrong...",
+      "Subtitle": "The page you are trying to access was not found."
+    },
+    "500": {
+      "Title": "Internal Server Error.",
+      "Subtitle": "We are already working on a fix. Please try again later."
+    },
+    "Default": {
+      "Title": "Something went wrong...",
+      "Subtitle": "Unknown error."
+    },
+    "Buttons": {
+      "Back": "Back",
+      "ToMain": "Go to the main page"
+    }
+  }
+}

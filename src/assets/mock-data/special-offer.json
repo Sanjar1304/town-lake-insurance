@@ -1,0 +1,16 @@
+[
+  {
+    "image": "/assets/mock-data/mock-images/special-offer/airplane.png",
+    "title": "Промоакция “Мир без границ с APEX INSURANCE”",
+    "text": "Оформи полис, выиграй отпуск! Защити себя и отправляйся в путь!",
+    "url": "",
+    "color": "#002C47"
+  },
+  {
+    "image": "/assets/mock-data/mock-images/special-offer/car.png",
+    "title": "Микрострахование авто КАСКО для абонентов UCELL",
+    "text": "25 000 сум в месяц. Сумма покрытия: 2 000 000 сум!",
+    "url": "",
+    "color": "#fff"
+  }
+]

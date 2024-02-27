@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Личное страхование",
+    "text": "Страхование туристов, страхование от несчастных случаев, страхование спортсменов, страхование на случай инфекционного заболевания",
+    "image": "/assets/mock-data/mock-icons/products/circle-user-1.svg",
+    "url": ""
+  },
+  {
+    "title": "Страхование имущества",
+    "text": "Страхование туристов, страхование от несчастных случаев, страхование спортсменов, страхование на случай инфекционного заболевания",
+    "image": "/assets/mock-data/mock-icons/products/circle-user-2.svg",
+    "url": ""
+  },
+  {
+    "title": "Страхование ответственности",
+    "text": "",
+    "image": "/assets/mock-data/mock-icons/products/circle-user-shield.svg",
+    "url": ""
+  },
+  {
+    "title": "КАСКО, КАСКО-ГАЗ",
+    "text": "",
+    "image": "/assets/mock-data/mock-icons/products/circle-user-car.svg",
+    "url": ""
+  },
+  {
+    "title": "Все виды страхования",
+    "text": "11 предложений",
+    "image": "",
+    "url": ""
+  }
+]

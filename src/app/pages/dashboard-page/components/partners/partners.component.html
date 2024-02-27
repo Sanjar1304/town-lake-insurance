@@ -1,0 +1,11 @@
+<section class="container partners">
+    <h2 class="partners_title">Наши партнеры</h2>
+  <div class="partners__block">
+    <img
+      class="partners__block_img"
+      *ngFor="let card of cards"
+      [src]="card.icon"
+      [alt]="card.name"
+    />
+  </div>
+</section>

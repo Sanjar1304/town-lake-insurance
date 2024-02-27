@@ -1,0 +1,20 @@
+{
+  "ErrorPage": {
+    "404": {
+      "Title": "Xatolik yuzaga keldi...",
+      "Subtitle": "Siz murojat qilayotgan sahifa topilmadi."
+    },
+    "500": {
+      "Title": "Ichki server xatosi.",
+      "Subtitle": "Biz tuzatish ustida ishlayapmiz. Iltimos, keyinroq qayta urinib ko'ring."
+    },
+    "Default": {
+      "Title": "Xatolik yuzaga keldi...",
+      "Subtitle": "Noma'lum xato."
+    },
+    "Buttons": {
+      "Back": "Orqaga",
+      "ToMain": "Asosiy sahifaga qaytish"
+    }
+  }
+}

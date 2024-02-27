@@ -1,0 +1,104 @@
+<header class="container header">
+  <div class="header__content">
+    <div class="header__content__first">
+      <div class="header__content__first__items">
+        <img
+          class="header__content__first__items_logo"
+          routerLink="/"
+          *ngIf="logo$ | async as logo"
+          [src]="logo.icon"
+          [alt]="logo.name"
+        />
+        <nav class="header__content__first__items__nav">
+          <ng-container *ngFor="let tab of tabs">
+            <app-tab
+              class="header__content__first__items__nav_tab"
+              [tabConfig]="tab"
+              [currentParam]="currentParam"
+              (clickEmitter)="navigateToTab(tab.params)"
+            >
+            </app-tab>
+          </ng-container>
+        </nav>
+      </div>
+      <div class="header__content__first__icons">
+        <div class="header__content__first__icons__img">
+          <img
+            class="header__content__first__icons__img_icon"
+            src="assets/icons/header-icons/eye.svg"
+            alt="eye"
+          />
+          <button
+            class="header__content__first__icons__img__lang-btn"
+            [matMenuTriggerFor]="langMenu"
+            (click)="applyLanguage(activeLanguage)"
+          >
+            <span class="header__content__first__icons__img__lang-btn_active">{{
+              activeLanguage | uppercase
+            }}</span>
+            <img
+              class="header__content__first__icons__img__lang-btn_icon"
+              src="/assets/icons/header-icons/chevron-down.svg"
+              alt="chevron-down"
+            />
+            <mat-menu
+              ng-deep
+              #langMenu
+              class="header__content__first__icons__img__lang-btn__menu"
+            >
+              <span
+                ng-deep
+                class="header__content__first__icons__img__lang-btn__menu_text"
+                *ngFor="let lang of languages"
+                (click)="applyLanguage(lang)"
+                >{{ lang | uppercase }}</span
+              >
+            </mat-menu>
+          </button>
+        </div>
+        <button class="header__content__first__icons__right">
+          <img
+            class="header__content__first__icons__right_icon"
+            src="/assets/icons/header-icons/phone.svg"
+            alt="phone"
+          />
+          <a class="header__content__first__icons__right_number" href="tel:1188"
+            >1188</a
+          >
+        </button>
+      </div>
+    </div>
+    <div class="header__content__second">
+      <nav class="header__content__second__menu-items">
+        <ng-container *ngFor="let nav of currentNavs">
+          <a
+            class="header__content__second__menu-items_link"
+            *ngIf="
+              currentNavs?.params !== SubHeaderEnum.AboutUs ||
+              currentNavs?.params !== SubHeaderEnum.Contacts
+            "
+            >{{ nav.category }}
+          </a>
+          <a
+            [routerLink]="nav.path"
+            class="header__content__second__menu-items_link"
+            >{{ nav.title }}</a
+          >
+        </ng-container>
+      </nav>
+      <div class="header__content__second__anchor-items">
+        <a class="header__content__second__anchor-items_link"
+          >Оформить E-polis</a
+        >
+        <button class="header__content__second__anchor-items__btn">
+          <img
+            class="header__content__second__anchor-items__btn_icon"
+            src="/assets/icons/header-icons/union.svg"
+            alt="union"
+          />
+          <a class="header__content__second__anchor-items__btn_text">Такафул</a>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>

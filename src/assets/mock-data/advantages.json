@@ -1,0 +1,26 @@
+[
+  {
+    "icon":"/assets/mock-data/mock-icons/advantages/man_above_home.svg",
+    "text":"Качество и надёжность всех услуг"
+  },
+  {
+    "icon":"/assets/mock-data/mock-icons/advantages/verfied_checklist.svg",
+    "text":"Ответственность за ваше будущее "
+  },
+  {
+    "icon":"/assets/mock-data/mock-icons/advantages/family_on_hands.svg",
+    "text":"Лучшие продукты, цены и уровень обслуживания"
+  },
+  {
+    "icon":"/assets/mock-data/mock-icons/advantages/family_under_umbrella.svg",
+    "text":"Индивидуальный подход и выгодные цены"
+  },
+  {
+    "icon":"/assets/mock-data/mock-icons/advantages/gears.svg",
+    "text":"Технологичность и инновационность"
+  },
+  {
+    "icon":"/assets/mock-data/mock-icons/advantages/three_users.svg",
+    "text":"Лучшие практики и вековой успешный опыт"
+  }
+]

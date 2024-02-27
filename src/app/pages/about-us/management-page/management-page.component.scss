@@ -1,0 +1,9 @@
+@import "visual/visual";
+
+:host {
+  .management {
+    &__content {
+      width: 100%;
+    }
+  }
+}

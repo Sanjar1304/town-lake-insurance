@@ -1,0 +1,24 @@
+@import "visual/visual";
+
+:host {
+  @mixin tab {
+    @include flex(row, center, space-between);
+    @include font(16px, "Inter Medium", normal, 600, 140%);
+    border-bottom: 4px solid transparent;
+    margin: 8px 0;
+    gap: 20px;
+    cursor: pointer;
+  }
+
+  .active {
+    @include tab;
+    height: 30px;
+    color: $color-blue-for-active-menu;
+    border-bottom: 4px solid $color-blue-for-active-menu;
+  }
+
+  .non-active {
+    @include tab;
+    color: $color-green-for-text;
+  }
+}

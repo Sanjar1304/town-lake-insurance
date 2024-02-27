@@ -1,0 +1,9 @@
+@import "visual/visual";
+
+:host {
+  .gas {
+    &__content {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@env/*": ["environments/*"],
+      "@core/*": ["app/core/*"],
+      "@shared/*": ["app/shared/*"],
+      "@modules/*": ["app/modules/*"],
+      "@layout/*": ["app/layout/*"],
+      "@assets/*": ["assets/*"],
+      "@fuse/*": ["@fuse/*"],
+      "@auth/*": ["app/modules/auth/*"],
+      "@mock-api/*": ["app/mock-api/*"],
+      "@business/*": ["app/modules/business/*"],
+      "@clients/*": ["app/modules/business/pages/clients/*"],
+      "@car-loan/*": ["app/modules/business/pages/credit-products/car-loan/*"]
+    },
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "useDefineForClassFields": false,
+    "lib": ["ES2022", "dom"]
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false
+  }
+}

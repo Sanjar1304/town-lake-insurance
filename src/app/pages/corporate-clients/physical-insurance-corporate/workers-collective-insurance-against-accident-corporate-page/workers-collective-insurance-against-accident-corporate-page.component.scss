@@ -1,0 +1,9 @@
+@import "visual/visual";
+
+:host {
+  .workers-collective {
+    &__content {
+      width: 100%;
+    }
+  }
+}

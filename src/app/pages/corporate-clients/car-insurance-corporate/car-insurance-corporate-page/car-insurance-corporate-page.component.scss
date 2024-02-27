@@ -1,0 +1,9 @@
+@import "visual/visual";
+
+:host {
+  .car-insurance {
+    &__content {
+      width: 100%;
+    }
+  }
+}

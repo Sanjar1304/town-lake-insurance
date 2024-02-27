@@ -1,0 +1,111 @@
+<footer class="container footer">
+  <div class="footer__content">
+    <div class="footer__content__first">
+      <div
+        class="footer__content__first__left"
+        *ngIf="contactNumbers$ | async as number"
+      >
+        <div class="footer__content__first__left__block">
+          <p class="footer__content__first__left__block_title">
+            Поддержка 24/7:
+          </p>
+          <a
+            class="footer__content__first__left__block_number"
+            [href]="'tel:' + number.hot"
+            >{{ number.hot }}</a
+          >
+        </div>
+
+        <div class="footer__content__first__left__block">
+          <p class="footer__content__first__left__block_title">
+            Поддержка 24/7:
+          </p>
+          <a
+            class="footer__content__first__left__block_number"
+            [href]="'tel:' + number.phoneNumber"
+            >{{ number.phoneNumber }}</a
+          >
+        </div>
+
+        <div class="footer__content__first__left__block">
+          <p class="footer__content__first__left__block_title">
+            Мы в соцсетях:
+          </p>
+          <div class="footer__content__first__left__block__socials">
+            <a
+              class="footer__content__first__left__block__socials__anchor"
+              *ngFor="let item of socials$ | async"
+              [href]="item.link"
+            >
+              <img
+                class="footer__content__first__left__block__socials__anchor_unit"
+                [src]="item.icon"
+                [alt]="item.name"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__content__first__right">
+        <button class="footer__content__first__right_btn">
+          Оформить E-polis
+        </button>
+        <button class="footer__content__first__right_btn">
+          Обратная связь
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="footer__content__second"
+      *ngFor="let item of footerNavMenus "
+    >
+      <h2 class="footer__content__second_title">{{ item.title }}</h2>
+      <nav class="footer__content__second__menu">
+        <a
+          class="footer__content__second__menu_link"
+          *ngFor="let link of item.content"
+          [routerLink]="link.path"
+          >{{ link.title }}</a
+        >
+      </nav>
+    </div>
+
+    <div class="footer__content__third">
+      <p class="footer__content__third_title">Государственные сайты:</p>
+      <a
+        class="footer__content__third_link"
+        *ngFor="let site of govSites$ | async"
+        [href]="site.website"
+        >{{ site.organization }}</a
+      >
+    </div>
+
+    <div class="footer__content__fourth">
+      <div class="footer__content__fourth__items">
+        <p class="footer__content__fourth__items_copyright">
+          © Apex Insurance Company 2024
+        </p>
+        <p class="footer__content__fourth__items_text">
+          При использовании материалов сайта ссылка на веб-сайт apexinsurance.uz
+          обязательна. <br />
+          Лицензия Агентства по развитию страхового рынка при Министерстве
+          финансов Республики Узбекистан серии СФ № 00030 от 18.02.2022 года.
+        </p>
+      </div>
+      <a
+        *ngIf="developingCompInfo$ | async as fincube"
+        class="footer__content__fourth_logo"
+        [href]="fincube.url"
+        target="_blank"
+      >
+        <img
+          class="footer__content__fourth_logo_item"
+          [src]="fincube.icon"
+          [alt]="fincube.name"
+        />
+      </a>
+    </div>
+  </div>
+</footer>

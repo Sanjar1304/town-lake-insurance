@@ -1,0 +1,17 @@
+<section class="container advantages">
+  <div class="advantages__block">
+    <h2 class="advantages__block_title">Наши преимущества</h2>
+    <div class="advantages__block__cards">
+      <div class="advantages__block__cards__item" *ngFor="let card of cards">
+        <img
+          class="advantages__block__cards__item_img"
+          [src]="[card.icon]"
+          alt=""
+        />
+        <p class="advantages__block__cards__item_text">
+          {{ card.text }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

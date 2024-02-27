@@ -1,0 +1,18 @@
+@import "visual/visual";
+
+:host {
+  .partners {
+    padding: 48px 0;
+
+    &_title {
+      @include font(34px, "Inter Semibold", normal, 600, 140%);
+      color: $color-green-for-text;
+      margin-bottom: 24px;
+    }
+
+    &__block {
+      @include flex(row, flex-start, space-between);
+      width: 1440px;
+    }
+  }
+}

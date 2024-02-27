@@ -1,0 +1,12 @@
+[
+  {
+    "icon": "/assets/icons/logos/apex-insurance-header-logo.svg",
+    "name": "apex insurance",
+    "identifier": "header"
+  },
+  {
+    "icon": "/assets/icons/logos/apex-logo-footer-logo.svg",
+    "name": "apex insurance",
+    "identifier": "footer"
+  }
+]

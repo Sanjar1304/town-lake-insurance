@@ -1,0 +1,38 @@
+@import "visual/visual.scss";
+
+:host {
+  .advantages {
+    background-color: #f5f8fa;
+
+      &__block {
+        padding: 80px 0;
+
+        &_title{
+          @include font(34px, "Inter Semibold", normal, 600, 140%);
+          color: $color-green-for-text;
+          text-align: left;
+          margin-bottom: 24px;
+        }
+
+        &__cards {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 24px;
+
+          &__item {
+            @include flex(column, flex-start, flex-start);
+            border-radius: 16px;
+            padding:40px;
+            gap: 32px;
+            background-color: $color-white;
+            filter:drop-shadow(0px 2px 4px rgba(0,0,0,0.05999999865889549));
+
+            &_text {
+              @include font(19px, "Inter Semibold", normal, 600, 140%);
+              color: $color-green-for-text;
+            }
+          }
+        }
+      }
+  }
+}

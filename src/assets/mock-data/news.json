@@ -1,0 +1,20 @@
+[
+  {
+    "image": "/assets/mock-data/mock-images/news/banner-1.png",
+    "date": "02.02.2024",
+    "text": "Опубликовали рэнкинг страховых компаний за III квартал 2023 года.",
+    "url": ""
+  },
+  {
+    "image": "/assets/mock-data/mock-images/news/banner-2.png",
+    "date": "10.04.2023",
+    "text": "Мы достигли нового уровня!",
+    "url": ""
+  },
+  {
+    "image": "/assets/mock-data/mock-images/news/banner-3.png",
+    "date": "14.08.2023",
+    "text": "APEX INSURANCE - лидер по размеру уставного капитала среди страховых компаний Узбекистана!",
+    "url": ""
+  }
+]

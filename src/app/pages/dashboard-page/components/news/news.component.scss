@@ -1,0 +1,63 @@
+@import "visual/visual.scss";
+
+:host {
+  .news {
+    &__block {
+      @include flex(column, flex-start, flex-start);
+      padding: 80px 0;
+
+      &__title-btn {
+        @include flex(row, center, space-between);
+        width: 100%;
+        margin-bottom: 24px;
+
+        &_title {
+          @include font(34px, "Inter Semibold", normal, 600, 140%);
+          color: $color-green-for-text;
+        }
+
+        &_button {
+          @include flex(row, center, center);
+          @include font(16px, "Inter Semibold", normal, 600, 140%);
+          padding: 13px 20px;
+          border-radius: 8px;
+          color: $color-green-for-text;
+          background-color: $color-white;
+          border: 1px solid #BDD0E2;
+          filter: drop-shadow(0px 1px 2px rgba(0,0,0,0.10000000149011612));
+        }
+      }
+
+      &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+
+        &__item {
+          @include flex(column, flex-start, flex-start);
+          gap: 15px;
+          overflow: hidden;
+          position: relative;
+          border-radius: 8px;
+
+          &_img {
+            cursor: pointer;
+          }
+
+          &_date {
+            @include font(14px, "Inter Medium", normal, 500, 130%);
+            padding: 6px 12px;
+            border-radius: 4px;
+            color: $color-green-for-text;
+            background-color: #ecf2f5;
+          }
+
+          &_text {
+            @include font(23px, "Inter Medium", normal, 500, 140%);
+            color: $color-blue-for-active-menu;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+<section class="container products">
+  <div class="products__cards">
+    <ng-container *ngFor="let card of cards; let i = index">
+      <div
+        class="products__cards__item"
+        [ngClass]="
+          i < 2 ? 'products__cards__item-top' : 'products__cards__item-bottom'
+        "
+      >
+        <div
+          class="products__cards__item__content"
+          [ngClass]="
+            i < 2
+              ? 'products__cards__item__content-top'
+              : 'products__cards__item__content-bottom'
+          "
+        >
+          <div class="products__cards__item__content__info">
+            <h2 class="products__cards__item__content__info_title">
+              {{ card.title }}
+            </h2>
+            <p class="products__cards__item__content__info_subtext">
+              {{ card.text }}
+            </p>
+          </div>
+
+          <img
+            class="products__cards__item__content_image"
+            [src]="[card.image]"
+            alt=""
+          />
+        </div>
+
+        <button class="products__cards__item_button">Рассчитать</button>
+      </div>
+    </ng-container>
+  </div>
+</section>

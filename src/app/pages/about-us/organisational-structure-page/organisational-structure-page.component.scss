@@ -1,0 +1,9 @@
+@import "visual/visual";
+
+:host {
+  .organisational-structure {
+    &__content {
+      width: 100%;
+    }
+  }
+}

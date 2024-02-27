@@ -1,0 +1,9 @@
+@import "visual/visual";
+
+:host {
+  .tasks {
+    &__content {
+      width: 100%;
+    }
+  }
+}

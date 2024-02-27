@@ -1,0 +1,10 @@
+@import "visual/visual";
+
+:host {
+  .financial-report {
+    &__content {
+      width: 100%;
+      height: $main-content-height;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import "visual/visual";
+
+:host {
+  .cargo {
+    &__content {
+      width: 100%;
+    }
+  }
+}

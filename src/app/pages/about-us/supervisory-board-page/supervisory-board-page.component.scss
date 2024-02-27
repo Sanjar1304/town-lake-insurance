@@ -1,0 +1,9 @@
+@import "visual/visual";
+
+:host {
+  .supervisory {
+    &__content {
+      width: 100%;
+    }
+  }
+}

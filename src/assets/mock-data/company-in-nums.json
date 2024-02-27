@@ -1,0 +1,22 @@
+[
+  {
+    "imgUrl":"/assets/mock-data/mock-icons/company-in-nums/100+.svg",
+    "text":"Страховых продуктов для частных лиц и компаний",
+    "name": "100+"
+  },
+  {
+    "imgUrl":"/assets/mock-data/mock-icons/company-in-nums/80+.svg",
+    "text":"Региональных филиалов и офисов продаж",
+    "name": "80+"
+  },
+  {
+    "imgUrl":"/assets/mock-data/mock-icons/company-in-nums/uzA++.svg",
+    "text":"Исключительно высокий уровень надежности*",
+    "name": "uzA++"
+  },
+  {
+    "imgUrl":"/assets/mock-data/mock-icons/company-in-nums/Online.svg",
+    "text":"Получите ссылку на E-Polis по СМС",
+    "name": "Online"
+  }
+]

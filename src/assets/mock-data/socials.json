@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "/assets/icons/socials/telegram.svg",
+    "name": "telegram",
+    "link": "https://web.telegram.org/a/"
+  },
+  {
+    "icon": "/assets/icons/socials/facebook.svg",
+    "name": "facebook",
+    "link": "https://www.facebook.com/"
+  },
+  {
+    "icon": "/assets/icons/socials/instagram.svg",
+    "name": "instagram",
+    "link": "https://www.instagram.com/"
+  },
+  {
+    "icon": "/assets/icons/socials/youtube.svg",
+    "name": "youtube",
+    "link": "https://www.youtube.com/"
+  }
+]

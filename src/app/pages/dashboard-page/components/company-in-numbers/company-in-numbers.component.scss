@@ -1,0 +1,24 @@
+@import "visual/visual.scss";
+
+:host {
+  .company-in-numbs {
+    @include flex(row, center, center);
+    &__cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-bottom: 48px;
+
+        &_item {
+          @include flex(column, flex-start, space-between);
+          width: 342px;
+          gap: 24px;
+
+          &_text {
+            @include font(23px, "Inter Regular", normal, 400, 140%);
+            color: $color-green-for-text;
+          }
+        }
+    }
+  }
+}

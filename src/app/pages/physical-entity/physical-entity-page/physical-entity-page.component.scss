@@ -1,0 +1,9 @@
+@import "visual/visual";
+
+:host {
+  .physical-entity {
+    &__content {
+      width: 100%;
+    }
+  }
+}

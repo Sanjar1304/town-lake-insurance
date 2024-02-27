@@ -1,0 +1,9 @@
+@import "visual/visual";
+
+:host {
+  .voluntary-health {
+    &__content {
+      width: 100%;
+    }
+  }
+}

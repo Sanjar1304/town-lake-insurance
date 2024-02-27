@@ -1,0 +1,9 @@
+@import "visual/visual";
+
+:host {
+  .tenders {
+    &__content {
+      width: 100%;
+    }
+  }
+}

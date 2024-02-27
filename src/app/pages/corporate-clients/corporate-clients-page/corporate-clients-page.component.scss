@@ -1,0 +1,9 @@
+@import "visual/visual";
+
+:host {
+  .corporate_clients {
+    &__conent {
+      width: 100%;
+    }
+  }
+}

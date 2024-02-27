@@ -1,0 +1,9 @@
+@import "visual/visual";
+
+:host {
+  .pledged {
+    &__content {
+      width: 100%;
+    }
+  }
+}

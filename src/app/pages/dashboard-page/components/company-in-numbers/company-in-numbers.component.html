@@ -1,0 +1,10 @@
+<section class="container company-in-numbs">
+  <div class="company-in-numbs__cards">
+    <div class="company-in-numbs__cards_item" *ngFor="let card of cards">
+      <img class="company-in-numbs__cards_item_img" [src]="[card.imgUrl]" [alt]=[card.name] />
+      <p class="company-in-numbs__cards_item_text">
+        {{card.text}}
+      </p>
+    </div>
+  </div>
+</section>

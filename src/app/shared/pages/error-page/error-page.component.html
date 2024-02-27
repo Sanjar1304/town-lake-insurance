@@ -1,0 +1,26 @@
+<main class="container">
+  <div class="error">
+    <img
+      class="error_img"
+      *ngIf="errorPageConfig.error !== 0"
+      [src]="errorPageConfig?.image"
+      [alt]="errorPageConfig?.error"
+    />
+    <div *ngIf="errorPageConfig.error !== 0" class="error_underline"></div>
+    <div class="error__description">
+      <img
+        class="error__description_icon"
+        [src]="errorPageConfig?.icon"
+        alt="cracked-glass"
+      />
+      <div class="error__description__text">
+        <span class="error__description__text_title font-headline-2sb">
+          {{ errorPageConfig?.title | transloco }}
+        </span>
+        <span class="error__description__text_message font-body-1">
+          {{ errorPageConfig?.message | transloco }}
+        </span>
+      </div>
+    </div>
+  </div>
+</main>

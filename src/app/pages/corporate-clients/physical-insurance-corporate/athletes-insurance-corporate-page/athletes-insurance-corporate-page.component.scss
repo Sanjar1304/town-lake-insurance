@@ -1,0 +1,9 @@
+@import "visual/visual";
+
+:host {
+  .athletes {
+    &__content {
+      width: 100%;
+    }
+  }
+}

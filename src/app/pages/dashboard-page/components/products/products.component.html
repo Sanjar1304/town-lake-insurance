@@ -17,10 +17,10 @@
         >
           <div class="products__cards__item__content__info">
             <h2 class="products__cards__item__content__info_title">
-              {{ card.title }}
+              {{ card.title | transloco }}
             </h2>
             <p class="products__cards__item__content__info_subtext">
-              {{ card.text }}
+              {{ card.text | transloco }}
             </p>
           </div>
 
@@ -31,7 +31,9 @@
           />
         </div>
 
-        <button class="products__cards__item_button">Рассчитать</button>
+        <button class="products__cards__item_button">
+          {{ card.buttonText | transloco }}
+        </button>
       </div>
     </ng-container>
   </div>

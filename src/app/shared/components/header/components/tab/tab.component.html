@@ -2,5 +2,5 @@
   [class]="tabConfig?.params === currentParam ? 'active' : 'non-active'"
   (click)="onClick()"
 >
-  <p *ngIf="tabConfig?.title">{{ tabConfig.title }}</p>
+  <p *ngIf="tabConfig?.title">{{ tabConfig.title | transloco }}</p>
 </div>

@@ -1,32 +1,97 @@
 [
   {
-    "title": "Личное страхование",
-    "text": "Страхование туристов, страхование от несчастных случаев, страхование спортсменов, страхование на случай инфекционного заболевания",
+    "title": {
+      "en": "Personal insurance",
+      "ru": "Личное страхование",
+      "uz": "Shaxsiy sug'urta"
+    },
+    "text": {
+      "en": "Insurance of tourists, emergency insurance, emergency sports insurance, emergency insurance",
+      "ru": "Страхование туристов, страхование от несчастных случаев, страхование спортсменов, страхование на случай инфекционного заболевания",
+      "uz": "Sayohat sug'urtasi, baxtsiz hodisalardan sug'urtalash, sport sug'urtasi, yuqumli kasalliklar sug'urtasi"
+    },
     "image": "/assets/mock-data/mock-icons/products/circle-user-1.svg",
-    "url": ""
+    "url": "",
+    "buttonText": {
+      "en": "Calculate",
+      "ru": "Рассчитать",
+      "uz": "Hisoblash"
+    }
   },
   {
-    "title": "Страхование имущества",
-    "text": "Страхование туристов, страхование от несчастных случаев, страхование спортсменов, страхование на случай инфекционного заболевания",
+    "title": {
+      "en": "Property insurance",
+      "ru": "Страхование имущества",
+      "uz": "Mulkni sug'urtalash"
+    },
+    "text": {
+      "en": "Property insurance is the optimal solution that can protect your property from real financial losses",
+      "ru": "Страхование имущества – оптимальное решение, способное защитить ваше имущество от реальных финансовых потерь.",
+      "uz": "Mulkni sug'urtalash - bu sizning mulkingizni haqiqiy moliyaviy yo'qotishlardan himoya qila oladigan optimal yechimdir"
+    },
     "image": "/assets/mock-data/mock-icons/products/circle-user-2.svg",
-    "url": ""
+    "url": "",
+    "buttonText": {
+      "en": "Calculate",
+      "ru": "Рассчитать",
+      "uz": "Hisoblash"
+    }
   },
   {
-    "title": "Страхование ответственности",
-    "text": "",
+    "title": {
+      "en": "Liability insurance",
+      "ru": "Страхование ответственности",
+      "uz": "Javobgarlik sug'urtasi"
+    },
+    "text": {
+      "en": "",
+      "ru": "",
+      "uz": ""
+    },
     "image": "/assets/mock-data/mock-icons/products/circle-user-shield.svg",
-    "url": ""
+    "url": "",
+    "buttonText": {
+      "en": "Calculate",
+      "ru": "Рассчитать",
+      "uz": "Hisoblash"
+    }
   },
   {
-    "title": "КАСКО, КАСКО-ГАЗ",
-    "text": "",
+    "title": {
+      "en": "CASCO, CASCO-GAS",
+      "ru": "КАСКО, КАСКО-ГАЗ",
+      "uz": "KASCO, KASCO-GAZ"
+    },
+    "text": {
+      "en": "",
+      "ru": "",
+      "uz": ""
+    },
     "image": "/assets/mock-data/mock-icons/products/circle-user-car.svg",
-    "url": ""
+    "url": "",
+    "buttonText": {
+      "en": "Calculate",
+      "ru": "Рассчитать",
+      "uz": "Hisoblash"
+    }
   },
   {
-    "title": "Все виды страхования",
-    "text": "11 предложений",
+    "title": {
+      "en": "All types of insurance",
+      "ru": "Все виды страхования",
+      "uz": "Barcha sug'urta turlari"
+    },
+    "text": {
+      "en": "11 offers",
+      "ru": "11 предложений",
+      "uz": "11 ta taklif"
+    },
     "image": "",
-    "url": ""
+    "url": "",
+    "buttonText": {
+      "en": "Calculate",
+      "ru": "Рассчитать",
+      "uz": "Hisoblash"
+    }
   }
 ]

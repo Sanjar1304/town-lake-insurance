@@ -1,15 +1,17 @@
 <section class="container news">
-  <div class="news__block">
+  <div class="news__block" >
     <div class="news__block__title-btn">
-      <h2 class="news__block__title-btn_title">Новости</h2>
-      <button class="news__block__title-btn_button">Все новости</button>
+      <h2 class="news__block__title-btn_title">
+        {{ "News.Title" | transloco }}
+      </h2>
+      <button class="news__block__title-btn_button">{{ "News.BtnText" | transloco}}</button>
     </div>
 
     <div class="news__block__cards">
       <div class="news__block__cards__item" *ngFor="let card of cards">
-        <img class="news__block__cards__item_img" [src]=[card.image] alt=""/>
-        <p class="news__block__cards__item_date">{{card.date}}</p>
-        <a class="news__block__cards__item_text">{{card.text}}</a>
+        <img class="news__block__cards__item_img" [src]="[card.image]" alt="" />
+        <p class="news__block__cards__item_date">{{ card.date }}</p>
+        <a class="news__block__cards__item_text">{{ card.text | transloco }}</a>
       </div>
     </div>
   </div>

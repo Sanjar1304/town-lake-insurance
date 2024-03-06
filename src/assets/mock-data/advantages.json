@@ -1,26 +1,50 @@
 [
   {
     "icon":"/assets/mock-data/mock-icons/advantages/man_above_home.svg",
-    "text":"Качество и надёжность всех услуг"
+    "text": {
+      "en": "Quality and reliability of all services",
+      "ru": "Качество и надёжность всех услуг",
+      "uz": "Barcha xizmatlarning sifati va ishonchliligi"
+    }
   },
   {
     "icon":"/assets/mock-data/mock-icons/advantages/verfied_checklist.svg",
-    "text":"Ответственность за ваше будущее "
+    "text": {
+      "en": "Responsibility for your future",
+      "ru": "Ответственность за ваше будущее",
+      "uz": "Sizning kelajagingiz uchun javobgarlik"
+    }
   },
   {
     "icon":"/assets/mock-data/mock-icons/advantages/family_on_hands.svg",
-    "text":"Лучшие продукты, цены и уровень обслуживания"
+    "text": {
+      "en": "Best Products, Prices and Service",
+      "ru": "Лучшие продукты, цены и уровень обслуживания",
+      "uz": "Eng yaxshi mahsulotlar, narxlar va xizmatlar"
+    }
   },
   {
     "icon":"/assets/mock-data/mock-icons/advantages/family_under_umbrella.svg",
-    "text":"Индивидуальный подход и выгодные цены"
+    "text": {
+      "en": "Individual approach and competitive prices",
+      "ru": "Индивидуальный подход и выгодные цены",
+      "uz": "Individual yondashuv va raqobatbardosh narxlar"
+    }
   },
   {
     "icon":"/assets/mock-data/mock-icons/advantages/gears.svg",
-    "text":"Технологичность и инновационность"
+    "text": {
+      "en": "Manufacturability and innovation",
+      "ru": "Технологичность и инновационность",
+      "uz": "Ishlab chiqarish qobiliyati va innovatsiya"
+    }
   },
   {
     "icon":"/assets/mock-data/mock-icons/advantages/three_users.svg",
-    "text":"Лучшие практики и вековой успешный опыт"
+    "text": {
+      "en": "Best practices and centuries of successful experience",
+      "ru": "Лучшие практики и вековой успешный опыт",
+      "uz": "Eng yaxshi tajriba va ko'p asrlik muvaffaqiyatli tajriba"
+    }
   }
 ]

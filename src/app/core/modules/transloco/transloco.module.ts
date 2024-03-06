@@ -1,13 +1,12 @@
+import { APP_INITIALIZER, NgModule } from "@angular/core";
 import {
-  Translation,
-  TRANSLOCO_CONFIG,
   TRANSLOCO_LOADER,
+  TRANSLOCO_CONFIG,
+  Translation,
   translocoConfig,
   TranslocoModule,
   TranslocoService,
 } from "@ngneat/transloco";
-import { APP_INITIALIZER, NgModule } from "@angular/core";
-
 import { TranslocoHttpLoader } from "@core/modules/transloco/transloco.http-loader";
 import { TranslocoConfig } from "@core/config/transloco.config";
 

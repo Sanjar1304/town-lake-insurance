@@ -1,4 +1,113 @@
 {
+  "MenuTab": {
+    "Clients": "Jismoniy shaxslar uchun",
+    "Business": "Korporativ mijozlarga",
+    "AboutUs": "Kompaniya haqida",
+    "Contact": "Bogʼlanish"
+  },
+  "NavMenu": {
+    "Client": {
+      "Title": "Jismoniy shaxslar uchun",
+      "PhysicalClient": {
+        "PropertyInsurances": {
+          "Title": "MOL-MULK SUG'URTASI",
+          "Mortgage": "Ipoteka sug'urtasi",
+          "PropertyForIndividuals": "Jismoniy shaxslarning mol-mulkini sug'urtalash",
+          "PropertyDamage": "Mol-mulkka yetkaziladigan zarar sug‘urtasi",
+          "Gadget": "Gadget sug'urtasi"
+        },
+        "CarInsurances": {
+          "Title": "AVTOSUG'URTA",
+          "CASCOCar": "Avtomobil sug‘urtasi (KASKO)",
+          "CASCO-gaz": "Gaz-ballon uskunalarini sug‘urtalash"
+        },
+        "PersonalInsurances": {
+          "Title": "SHAXSIY SUG'URTA",
+          "Travel": "Sayyohlarni sug'urtalash",
+          "InfectiousDisease": "Infeksion kasallikdan sug‘urtalash",
+          "Accident": "Jismoniy shaxslarni baxtsiz hodisalardan sug‘urtalash",
+          "Athletes": "Sportchilarni baxtsiz hodisalardan sug‘urtalash"
+        },
+        "LiabilityInsurances": {
+          "Title": "JAVOBGARLIK SUG'URTASI",
+          "CivilLiability": "Transport vositalari egalari fuqarolik javobgarligini majburiy sug‘urta qilish (TVEFJMSQ)"
+        }
+      }
+    },
+    "Business": {
+      "Title": "Korporativ mijozlarga",
+      "BusinessClient": {
+        "PropertyInsurances": {
+          "Title": "MOL-MULK SUG'URTASI",
+          "PropertyLeased": "Lizingga berilgan mol-mulkni sug'urta qilish",
+          "AllRisks": "Mol-mulkni barcha xavflardan sug'urtalash",
+          "Pledged": "Garovga berilayotgan mol-mulk sug‘urtasi",
+          "Cargo": "Yuklarni sug‘urtalash",
+          "Mortgage": "Ipoteka sug‘urtasi"
+        },
+        "CarInsurances": {
+          "Title": "AVTOSUG'URTA",
+          "CASCOCar": "Avtomobil sug‘urtasi (KASKO)",
+          "CASCO-gaz": "Gaz-ballon uskunalarini sug‘urtalash"
+        },
+        "PersonalInsurances": {
+          "Title": "SHAXSIY SUG'URTA",
+          "Accident": "Baxtsiz hodisalardan sug‘urtalash",
+          "Athletes": "Sportchilarni sug'urtalash",
+          "Travel": "Sayyohlarni sug'urtalash",
+          "InfectiousDisease": "Infeksion kasallikdan sug‘urtalash",
+          "Voluntary": "ITS — ixtiyoriy tibbiy sug‘urta",
+          "Collective": "Xodimlarni baxtsiz hodisalardan jamoaviy sug‘urtalash"
+        },
+        "LiabilityInsurances": {
+          "Title": "JAVOBGARLIK SUG'URTASI",
+          "CivilLiability": "IBFJMSQ",
+          "CompulsoryCarrier": "TFJMSQ",
+          "MandatoryEmployer": "Qurilish-montaj xatarlari sug‘urtas",
+          "Construction": "TVEFJMSQ"
+        }
+      }
+    },
+    "AboutUs": {
+      "Content": {
+        "Title": "Kompaniya haqida",
+        "AboutUs": "Biz haqimizda",
+        "Financial": "Moliyaviy hisobot",
+        "Management": "Rahbariyat",
+        "Structure": "Tashkiliy tuzilma"
+      }
+    },
+    "Contacts": {
+      "Content": {
+        "Title": "Bogʼlanish",
+        "Contacts": "Biz bilan bogʼlanish",
+        "OurAddresses": "Bizning manzillarimiz"
+      }
+    }
+  },
+  "SpecialOffer": "Maxsus takliflar",
+  "Advantages": "Bizning afzalliklarimiz",
+  "News": {
+    "Title": "Yangiliklar",
+    "BtnText": "Barcha yangiliklar"
+  },
+  "Partners": "Bizning hamkorlarimiz",
+  "FooterTitles": {
+    "ContactNumbersTitle": "24/7 qo'llab-quvvatlash:",
+    "SocialsTitle": "Biz ijtimoiy tarmoqlardamiz:"
+  },
+  "GovSites": "Davlat tashkilotlari veb-saytlari:",
+  "CopyRight": {
+    "Warning": "Sayt materiallaridan foydalanishda town-lake.uz veb-saytiga havola kerak bo'ladi.",
+    "License": "O‘zbekiston Respublikasi Moliya vazirligi huzuridagi Sug‘urta bozorini rivojlantirish agentligining 00.00.0000-sonli SF seriyali 00000000-sonli litsenziyasi."
+  },
+  "Buttons": {
+    "Epolis": "E-polis rasmiylashtir",
+    "Feedback": "Qayta aloqa"
+  },
+  "Takaful": {
+    "Text": "Takaful"
+  },
   "ErrorPage": {
     "404": {
       "Title": "Xatolik yuzaga keldi...",

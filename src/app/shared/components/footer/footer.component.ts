@@ -21,11 +21,12 @@ import {
   socialSelector,
 } from "../../../state/company-about/selectors";
 import { DevelopingCompanyInfo } from "@core/interfaces/developingCompanyInfo/developingCompanyInfo";
+import { TranslocoModule } from "@ngneat/transloco";
 
 @Component({
   selector: "app-footer",
   standalone: true,
-  imports: [CommonModule, NgOptimizedImage, RouterLink],
+  imports: [CommonModule, NgOptimizedImage, RouterLink, TranslocoModule],
   templateUrl: "./footer.component.html",
   styleUrls: ["./footer.component.scss"],
 })

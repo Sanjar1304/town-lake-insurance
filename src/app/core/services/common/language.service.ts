@@ -1,34 +1,29 @@
-import { Injectable } from "@angular/core";
+import { inject, Injectable } from "@angular/core";
 
 import { TranslocoService } from "@ngneat/transloco";
 
 import { LanguageStorageService } from "@core/services/root/storage.service";
-import { LanguagesISO639$1FormatEnum } from "@core/enums/languages-iso639$1-format.enum";
+import { LanguagesIso6391FormatEnum } from "@core/enums/languages-iso639$1-format.enum";
 
 @Injectable({
   providedIn: "root",
 })
 export class LanguageService {
-  public constructor(
-    private _translocoService: TranslocoService,
-    private _languageStorageService: LanguageStorageService
-  ) {}
+  private _translocoService = inject(TranslocoService);
+  private _languageStorageService = inject(LanguageStorageService);
 
-  // Applying/Switching
-  public switchingLanguage(language: LanguagesISO639$1FormatEnum): void {
+  public switchLanguage(language: LanguagesIso6391FormatEnum): void {
     this._translocoService.setActiveLang(language);
     this._languageStorageService.setItem(language);
   }
 
-  // Default
-  public switchToDefaultLanguage(language: string): void {
-    this.switchingLanguage(language as LanguagesISO639$1FormatEnum);
+  public switchDefaultLanguage(language: LanguagesIso6391FormatEnum): void {
+    this.switchLanguage(language as LanguagesIso6391FormatEnum);
   }
 
-  // Init
   public initLanguage(language: string): void {
-    const currentLanguage: LanguagesISO639$1FormatEnum =
-      this._languageStorageService.getItem() as LanguagesISO639$1FormatEnum;
+    const currentLanguage: LanguagesIso6391FormatEnum =
+      this._languageStorageService.getItem() as LanguagesIso6391FormatEnum;
 
     if (currentLanguage) {
       this._translocoService.setActiveLang(currentLanguage);
@@ -38,7 +33,7 @@ export class LanguageService {
 
     this._translocoService.setActiveLang(language);
     this._languageStorageService.setItem(
-      language as LanguagesISO639$1FormatEnum
+      language as LanguagesIso6391FormatEnum
     );
   }
 }

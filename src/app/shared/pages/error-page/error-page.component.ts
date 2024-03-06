@@ -1,9 +1,10 @@
-import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
-import { Router, RouterModule } from "@angular/router";
 import { CommonModule } from "@angular/common";
+import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
+
+import { Router, RouterModule } from "@angular/router";
+import { TranslocoModule } from "@ngneat/transloco";
 
 import { UnsubscribeDirective } from "@core/directives/unsubscribe.directive";
-import { TranslocoCoreModule } from "@core/modules/transloco/transloco.module";
 
 export interface IErrorConfig {
   error: 404 | 500 | 0;
@@ -41,7 +42,7 @@ export const errorPageConfigs: IErrorConfig[] = [
   selector: "app-error-page",
   templateUrl: "./error-page.component.html",
   styleUrls: ["./error-page.component.scss"],
-  imports: [RouterModule, CommonModule, TranslocoCoreModule],
+  imports: [RouterModule, CommonModule, TranslocoModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
 })
@@ -58,8 +59,11 @@ export class ErrorPageComponent extends UnsubscribeDirective implements OnInit {
 
   public defineError(): void {
     this.errorPageConfig =
-      errorPageConfigs.find((e: IErrorConfig): boolean =>
-        this._router.url.includes(e.error.toString())
-      ) || errorPageConfigs.find((e: IErrorConfig): boolean => e.error === 0);
+      errorPageConfigs.find((value: IErrorConfig) =>
+        this._router.url.includes(value.error.toString())
+      ) ||
+      errorPageConfigs.find(
+        (value: IErrorConfig): boolean => value.error === 0
+      );
   }
 }

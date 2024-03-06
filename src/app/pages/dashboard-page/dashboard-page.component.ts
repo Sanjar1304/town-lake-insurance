@@ -86,8 +86,8 @@ export class DashboardPageComponent implements OnInit {
     this.productsCards$ = this._store.pipe(select(productSelector));
   }
   public launchDispatching(): void {
-    this._store.dispatch(getPartners());
     this._store.dispatch(getCompanyInNums());
+    this._store.dispatch(getPartners());
     this._store.dispatch(getAdvantages());
     this._store.dispatch(getCarousel());
     this._store.dispatch(getSpecialOffer());

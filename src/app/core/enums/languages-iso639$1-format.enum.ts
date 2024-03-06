@@ -1,5 +1,5 @@
-export enum LanguagesISO639$1FormatEnum {
-  ENG = "en",
-  RUS = "ru",
+export enum LanguagesIso6391FormatEnum {
   UZB = "uz",
+  RUS = "ru",
+  ENG = "en",
 }

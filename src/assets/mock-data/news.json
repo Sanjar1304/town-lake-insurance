@@ -2,19 +2,31 @@
   {
     "image": "/assets/mock-data/mock-images/news/banner-1.png",
     "date": "02.02.2024",
-    "text": "Опубликовали рэнкинг страховых компаний за III квартал 2023 года.",
+    "text": {
+      "en": "The ranking of insurance companies for the third quarter of 2023 has been published.",
+      "ru": "Опубликовали рэнкинг страховых компаний за III квартал 2023 года.",
+      "uz": "2023 yilning uchinchi choragi uchun sug‘urta kompaniyalari reytingi e’lon qilindi."
+    },
     "url": ""
   },
   {
     "image": "/assets/mock-data/mock-images/news/banner-2.png",
     "date": "10.04.2023",
-    "text": "Мы достигли нового уровня!",
+    "text": {
+      "en": "We have reached a new level!",
+      "ru": "Мы достигли нового уровня!",
+      "uz": "Biz yangi bosqichga chiqdik!"
+    },
     "url": ""
   },
   {
     "image": "/assets/mock-data/mock-images/news/banner-3.png",
     "date": "14.08.2023",
-    "text": "Town Lake - лидер по размеру уставного капитала среди страховых компаний Узбекистана!",
+    "text": {
+      "en": "Town Lake is the leader in terms of authorized capital among insurance companies in Uzbekistan!",
+      "ru": "Town Lake - лидер по размеру уставного капитала среди страховых компаний Узбекистана!",
+      "uz": "Town Lake ustav kapitali bo'yicha O'zbekistonda sug'urta kompaniyalari orasida yetakchi!"
+    },
     "url": ""
   }
 ]

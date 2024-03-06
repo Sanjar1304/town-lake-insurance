@@ -6,7 +6,7 @@ import { Observable } from "rxjs/internal/Observable";
 
 import { IAppConfig } from "@core/interfaces/app-config.interface";
 import { DEFAULT_APP_CONFIG_PATH } from "@core/config/app.config";
-import { LanguageService } from "@core/services/common/language.service";
+
 import { AppConfigStateService } from "../services/state/app-config-state.service";
 
 @Injectable({
@@ -17,8 +17,7 @@ export class AppConfigLoaderService {
 
   public constructor(
     _injector: Injector,
-    private _languageService: LanguageService,
-    private _appConfigStateService: AppConfigStateService,
+    private _appConfigStateService: AppConfigStateService
   ) {
     this._injector = _injector;
   }
@@ -31,16 +30,13 @@ export class AppConfigLoaderService {
       map((config: IAppConfig) => {
         if (config) {
           this._appConfigStateService.setAppConfig(config);
-          this.applyConfig(config);
         }
         return config;
       })
     );
   }
 
-
-  public applyConfig(config: IAppConfig): void {
-    this._languageService.initLanguage(config.language);
+  public applyConfig(): void {
+    return;
   }
-
 }

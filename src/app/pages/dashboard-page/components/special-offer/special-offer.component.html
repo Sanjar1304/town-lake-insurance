@@ -1,9 +1,11 @@
 <section class="container special-offer">
-  <div class="special-offer__content">
-    <h2 class="special-offer__content_title">Специальные предложения</h2>
+  <div class="special-offer__content" >
+    <h2 class="special-offer__content_title">
+      {{ "SpecialOffer" | transloco }}
+    </h2>
 
     <div class="special-offer__content__cards">
-      <ng-container *ngFor="let card of cards; let i = index">
+      <ng-container *ngFor="let card of cards; let i = index" >
         <div class="special-offer__content__cards__item">
           <img
             class="special-offer__content__cards__item_img"
@@ -15,16 +17,16 @@
               [class]="'special-offer__content__cards__item__info_title'"
               [style.color]="card.color"
             >
-              {{ card.title }}
+              {{ card.title | transloco }}
             </h2>
             <p
               [class]="'special-offer__content__cards__item__info_text'"
               [style.color]="card.color"
             >
-              {{ card.text }}
+              {{ card.text | transloco }}
             </p>
             <button class="special-offer__content__cards__item__info_btn">
-              Подробнее
+              {{ card.btnText | transloco }}
             </button>
           </div>
         </div>

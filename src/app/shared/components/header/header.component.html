@@ -28,28 +28,30 @@
             [matMenuTriggerFor]="langMenu"
             (click)="applyLanguage(activeLanguage)"
           >
-            <span class="header__content__first__icons__img__lang-btn_active">{{
-              activeLanguage | uppercase
-            }}</span>
+            <span class="header__content__first__icons__img__lang-btn_active">
+              {{ activeLanguage | uppercase }}
+            </span>
             <img
               class="header__content__first__icons__img__lang-btn_icon"
               src="/assets/icons/header-icons/chevron-down.svg"
               alt="chevron-down"
             />
+          </button>
+          <div class="header__content__ first__icons__img__wrapper">
             <mat-menu
               ng-deep
               #langMenu
-              class="header__content__first__icons__img__lang-btn__menu"
+              class="header__content__first__icons__img__wrapper__menu"
             >
               <span
-                ng-deep
-                class="header__content__first__icons__img__lang-btn__menu_text"
+                class="header__content__first__icons__img__wrapper__menu_text"
                 *ngFor="let lang of languages"
                 (click)="applyLanguage(lang)"
-                >{{ lang | uppercase }}</span
               >
+                {{ lang | uppercase }}
+              </span>
             </mat-menu>
-          </button>
+          </div>
         </div>
         <button class="header__content__first__icons__right">
           <img
@@ -72,26 +74,26 @@
               currentNavs?.params !== SubHeaderEnum.AboutUs ||
               currentNavs?.params !== SubHeaderEnum.Contacts
             "
-            >{{ nav.category }}
+            >{{ nav.category | transloco }}
           </a>
           <a
             [routerLink]="nav.path"
             class="header__content__second__menu-items_link"
-            >{{ nav.title }}</a
+            >{{ nav.title | transloco }}</a
           >
         </ng-container>
       </nav>
       <div class="header__content__second__anchor-items">
         <a class="header__content__second__anchor-items_link"
-          >Оформить E-polis</a
-        >
+          >{{ "Buttons.Epolis" | transloco }}
+        </a>
         <button class="header__content__second__anchor-items__btn">
           <img
             class="header__content__second__anchor-items__btn_icon"
             src="/assets/icons/header-icons/union.svg"
             alt="union"
           />
-          <a class="header__content__second__anchor-items__btn_text">Такафул</a>
+          <a class="header__content__second__anchor-items__btn_text">{{"Takaful.Text" | transloco}}</a>
         </button>
       </div>
     </div>

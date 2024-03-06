@@ -1,4 +1,113 @@
 {
+  "MenuTab": {
+    "Clients": "For individuals",
+    "Business": "For business",
+    "AboutUs": "About company",
+    "Contact": "Contacts"
+  },
+  "NavMenu": {
+    "Client": {
+      "Title": "Physical entity clients",
+      "PhysicalClient": {
+        "PropertyInsurances": {
+          "Title": "PROPERTY INSURANCE",
+          "Mortgage": "Mortgage insurance",
+          "PropertyForIndividuals": "Property insurance for individuals",
+          "PropertyDamage": "Property damage insurance",
+          "Gadget": "Gadget insurance"
+        },
+        "CarInsurances": {
+          "Title": "CAR INSURANCE",
+          "CASCOCar": "CASCO car insurance",
+          "CASCO-gaz": "Insurance of gas equipment CASCO-gaz"
+        },
+        "PersonalInsurances": {
+          "Title": "PERSONAL INSURANCE",
+          "Travel": "Travel insurance",
+          "InfectiousDisease": "Infectious Disease Insurance",
+          "Accident": "Accident insurance",
+          "Athletes": "Athletes insurance"
+        },
+        "LiabilityInsurances": {
+          "Title": "LIABILITY INSURANCE",
+          "CivilLiability": "Compulsory civil liability insurance for vehicle owners"
+        }
+      }
+    },
+    "Business": {
+      "Title": "Legal entity clients",
+      "BusinessClient": {
+        "PropertyInsurances": {
+          "Title": "PROPERTY INSURANCE",
+          "PropertyLeased": "Insurance of property leased",
+          "AllRisks": "Property insurance against all risks",
+          "Pledged": "Insurance of property pledged",
+          "Cargo": "Cargo insurance",
+          "Mortgage": "Mortgage insurance"
+        },
+        "CarInsurances": {
+          "Title": "CAR INSURANCE",
+          "CASCOCar": "CASCO car insurance",
+          "CASCO-gaz": "Insurance of gas equipment CASCO-gaz"
+        },
+        "PersonalInsurances": {
+          "Title": "PERSONAL INSURANCE",
+          "Accident": "Accident insurance",
+          "Athletes": "Athletes insurance",
+          "Travel": "Travel insurance",
+          "InfectiousDisease": "Infectious Disease Insurance",
+          "Voluntary": "Voluntary health insurance",
+          "Collective": "Collective insurance of workers against accidents at work"
+        },
+        "LiabilityInsurances": {
+          "Title": "LIABILITY INSURANCE",
+          "CivilLiability": "Compulsory civil liability insurance for vehicle owners",
+          "CompulsoryCarrier": "Compulsory carrier civil liability insurance",
+          "MandatoryEmployer": "Mandatory employer civil liability insurance",
+          "Construction": "Insurance of construction and installation risks"
+        }
+      }
+    },
+    "AboutUs": {
+      "Content": {
+        "Title": "About us",
+        "AboutUs": "About us",
+        "Financial": "Financial report",
+        "Management": "Management",
+        "Structure": "Organizational structure"
+      }
+    },
+    "Contacts": {
+      "Content": {
+        "Title": "Contacts",
+        "Contacts": "Contacts",
+        "OurAddresses": "Our addresses"
+      }
+    }
+  },
+  "SpecialOffer": "Special Offers",
+  "Advantages": "Our advantages",
+  "News": {
+    "Title": "News",
+    "BtnText": "All news"
+  },
+  "Partners": "Our partners",
+  "FooterTitles": {
+    "ContactNumbersTitle": "24/7 support:",
+    "SocialsTitle": "We are in social networks:"
+  },
+  "GovSites": "State websites:",
+  "CopyRight": {
+    "Warning": "When using site materials, a link to the town-lake.uz website is required.",
+    "License": "License of the Agency for Development of the Insurance Market under the Ministry of Finance of the Republic of Uzbekistan, series SF No. 00000000 dated 00.00.0000."
+  },
+  "Buttons": {
+    "Epolis": "Apply for E-polis",
+    "Feedback": "Feedback"
+  },
+  "Takaful": {
+    "Text": "Takaful"
+  },
   "ErrorPage": {
     "404": {
       "Title": "Something went wrong...",

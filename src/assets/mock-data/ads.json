@@ -1,11 +1,31 @@
 [
   {
-    "topText": "Страхование ответственности",
-    "title": "Оформите ОСГО ВТС онлайн",
-    "text": "И получите ссылку на E-polis по смс",
-    "btnText": "Оформить страховку",
+    "topText": {
+      "en": "Liability Insurance",
+      "ru": "Страхование ответственности",
+      "uz": "Javobgarlik sug'urtasi"
+    },
+    "title": {
+      "en": "Apply for CCLIVO online",
+      "ru": "Оформите ОСГО ВТС онлайн",
+      "uz": "TVEFJMSQ ga onlayn ariza bering"
+    },
+    "text": {
+      "en": "And receive a link to E-polis via SMS",
+      "ru": "И получите ссылку на E-polis по смс",
+      "uz": "Va SMS orqali E-polisga havolani oling"
+    },
+    "btnText": {
+      "en": "Apply to insurance",
+      "ru": "Оформить страховку",
+      "uz": "Sug'urtani rasmiylashtirish"
+    },
     "btnUrl": "",
     "image": "/assets/mock-data/mock-images/carousel/carousel-car.png",
-    "imageName": "carousel image"
+    "imageName": {
+      "en": "advertisement image",
+      "ru": "рекламное изображение",
+      "uz": "reklama tasviri"
+    }
   }
 ]

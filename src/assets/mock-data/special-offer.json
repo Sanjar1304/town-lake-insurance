@@ -1,16 +1,42 @@
 [
   {
     "image": "/assets/mock-data/mock-images/special-offer/airplane.png",
-    "title": "Промоакция “Мир без границ с Town Lake”",
-    "text": "Оформи полис, выиграй отпуск! Защити себя и отправляйся в путь!",
+    "title": {
+      "en": "Promotion “A world without borders with Town Lake”",
+      "ru": "Промоакция “Мир без границ с Town Lake”",
+      "uz": "“Town Lake bilan chegarasiz dunyo” targ'iboti"
+    },
+    "text": {
+      "en": "Take out an insurance policy, win a vacation! Protect yourself and hit the road!",
+      "ru": "Оформи полис, выиграй отпуск! Защити себя и отправляйся в путь!",
+      "uz": "Sug'urta polisini rasmiylashtiring, ta'tilni yutib oling! O'zingizni himoya qiling va yo'lga chiqing!"
+    },
     "url": "",
-    "color": "#002C47"
+    "color": "#002C47",
+    "btnText": {
+      "en": "More",
+      "ru": "Подробнее",
+      "uz": "Batafsil"
+    }
   },
   {
     "image": "/assets/mock-data/mock-images/special-offer/car.png",
-    "title": "Микрострахование авто КАСКО для абонентов UCELL",
-    "text": "25 000 сум в месяц. Сумма покрытия: 2 000 000 сум!",
+    "title": {
+      "en": "CASCO auto microinsurance for UCELL subscribers",
+      "ru": "Микрострахование авто КАСКО для абонентов UCELL",
+      "uz": "UCELL abonentlari uchun KASKO avto mikrosug'urtasi"
+    },
+    "text": {
+      "en": "25,000 sum per month. Coverage amount: 2,000,000 sum!",
+      "ru": "25 000 сум в месяц. Сумма покрытия: 2 000 000 сум!",
+      "uz": "Oyiga 25 000 so'm. To'lov miqdori: 2 000 000 so'm!"
+    },
     "url": "",
-    "color": "#fff"
+    "color": "#fff",
+    "btnText": {
+      "en": "More",
+      "ru": "Подробнее",
+      "uz": "Batafsil"
+    }
   }
 ]

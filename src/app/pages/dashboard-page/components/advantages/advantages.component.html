@@ -1,6 +1,8 @@
 <section class="container advantages">
   <div class="advantages__block">
-    <h2 class="advantages__block_title">Наши преимущества</h2>
+    <h2 class="advantages__block_title">
+      {{ "Advantages" | transloco }}
+    </h2>
     <div class="advantages__block__cards">
       <div class="advantages__block__cards__item" *ngFor="let card of cards">
         <img
@@ -9,7 +11,7 @@
           alt=""
         />
         <p class="advantages__block__cards__item_text">
-          {{ card.text }}
+          {{ card.text | transloco }}
         </p>
       </div>
     </div>

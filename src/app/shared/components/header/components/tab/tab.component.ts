@@ -1,11 +1,12 @@
 import { Component, EventEmitter, Input, Output } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { IMenuTab } from "@shared/components/header/components/tab/interfaces/tab.interface";
+import { TranslocoModule } from "@ngneat/transloco";
 
 @Component({
   selector: "app-tab",
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslocoModule],
   templateUrl: "./tab.component.html",
   styleUrls: ["./tab.component.scss"],
 })

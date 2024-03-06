@@ -11,7 +11,7 @@ import { Observable } from "rxjs/internal/Observable";
 
 import { LanguageService } from "@core/services/common/language.service";
 import { LanguageStorageService } from "@core/services/root/storage.service";
-import { LanguagesISO639$1FormatEnum } from "@core/enums/languages-iso639$1-format.enum";
+
 import { EnumToArrayPipe } from "@shared/pipes/enum-to-array.pipe";
 import { CompanyAboutService } from "@core/services/requests/company-about.service";
 import { IMenuTab } from "@shared/components/header/components/tab/interfaces/tab.interface";
@@ -25,6 +25,8 @@ import { NavMenuItem } from "@shared/components/header/interfaces/menu.interface
 import { ContentCategory } from "@shared/components/header/interfaces/menu.interface";
 import { map } from "rxjs/operators";
 import { IdentifierEnum } from "@shared/components/header/enums/logo.enum";
+import { LanguagesIso6391FormatEnum } from "@core/enums/languages-iso639$1-format.enum";
+import { TranslocoModule } from "@ngneat/transloco";
 
 @Component({
   selector: "app-header",
@@ -40,6 +42,7 @@ import { IdentifierEnum } from "@shared/components/header/enums/logo.enum";
     NgOptimizedImage,
     EnumToArrayPipe,
     TabComponent,
+    TranslocoModule,
   ],
   templateUrl: "./header.component.html",
   styleUrls: ["./header.component.scss"],
@@ -47,11 +50,12 @@ import { IdentifierEnum } from "@shared/components/header/enums/logo.enum";
 export class HeaderComponent extends UnsubscribeDirective implements OnInit {
   public logo$: Observable<{ icon: string; name: string }>;
   public tabs: IMenuTab[] = tabs;
-  public currentNavs: NavMenuInterface[] | ContentCategory[] | null = null;
-  public languages: LanguagesISO639$1FormatEnum[] = Object.values(
-    LanguagesISO639$1FormatEnum
+  public languages: LanguagesIso6391FormatEnum[] = Object.values(
+    LanguagesIso6391FormatEnum
   );
-  public activeLanguage: LanguagesISO639$1FormatEnum;
+  public activeLanguage: LanguagesIso6391FormatEnum;
+
+  public currentNavs: NavMenuInterface[] | ContentCategory[] | null = null;
   public currentParam: SubHeaderEnum | null = SubHeaderEnum.Physicals;
 
   protected readonly navMenuItems: NavMenuItem[] = navMenus;
@@ -64,10 +68,10 @@ export class HeaderComponent extends UnsubscribeDirective implements OnInit {
   private readonly _activatedRoute = inject(ActivatedRoute);
 
   public ngOnInit(): void {
-    this.activeLanguage =
-      this._languageStorageService.getItem() as LanguagesISO639$1FormatEnum;
     this.getQueryParam();
     this.logo$ = this.getLogo();
+    this.activeLanguage =
+      this._languageStorageService.getItem() as LanguagesIso6391FormatEnum;
   }
 
   public getLogo(): Observable<{ icon: string; name: string }> {
@@ -88,10 +92,10 @@ export class HeaderComponent extends UnsubscribeDirective implements OnInit {
       return;
     }
 
-    this._languageService.switchingLanguage(
-      language as LanguagesISO639$1FormatEnum
+    this._languageService.switchLanguage(
+      language as LanguagesIso6391FormatEnum
     );
-    this.activeLanguage = language as LanguagesISO639$1FormatEnum;
+    this.activeLanguage = language as LanguagesIso6391FormatEnum;
   }
 
   public defineNavs(): void {

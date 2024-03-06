@@ -4,25 +4,25 @@ import { SubHeaderEnum } from "@shared/components/header/components/tab/enums/su
 export const tabs: IMenuTab[] = [
   {
     tabId: "1",
-    title: "Клиентам",
+    title: "MenuTab.Clients",
     isActive: true,
     params: SubHeaderEnum.Physicals,
   },
   {
     tabId: "2",
-    title: "Бизнесу",
+    title: "MenuTab.Business",
     isActive: false,
     params: SubHeaderEnum.Business,
   },
   {
     tabId: "3",
-    title: "О компании",
+    title: "MenuTab.AboutUs",
     isActive: false,
     params: SubHeaderEnum.AboutUs,
   },
   {
     tabId: "4",
-    title: "Контакты",
+    title: "MenuTab.Contact",
     isActive: false,
     params: SubHeaderEnum.Contacts,
   },

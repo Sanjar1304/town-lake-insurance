@@ -1,14 +1,26 @@
 [
   {
     "website": "https://my.gov.uz/",
-    "organization": "Правительственный портал"
+    "organization": {
+      "en": "Government portal",
+      "ru": "Правительственный портал",
+      "uz": "Hukumat portali"
+    }
   },
   {
     "website": "https://new.openinfo.uz/",
-    "organization": "Единый портал корпоративной информации"
+    "organization": {
+      "en": "Unified corporate information portal",
+      "ru": "Единый портал корпоративной информации",
+      "uz": "Yagona korporativ axborot portali"
+    }
   },
   {
     "website": "https://imda.uz/",
-    "organization": "Агентство по развитию страхового рынка"
+    "organization": {
+      "en": "Insurance Market Development Agency",
+      "ru": "Агентство по развитию страхового рынка",
+      "uz": "Sug'urta bozorini rivojlantirish agentligi"
+    }
   }
 ]

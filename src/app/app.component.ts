@@ -1,8 +1,10 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterOutlet } from "@angular/router";
-import { TranslocoCoreModule } from "@core/modules/transloco/transloco.module";
+
 import { TranslocoModule } from "@ngneat/transloco";
+import { TranslocoCoreModule } from "@core/modules/transloco/transloco.module";
+
 import { HeaderComponent } from "@shared/components/header/header.component";
 import { FooterComponent } from "@shared/components/footer/footer.component";
 
@@ -12,8 +14,8 @@ import { FooterComponent } from "@shared/components/footer/footer.component";
   imports: [
     CommonModule,
     RouterOutlet,
-    TranslocoCoreModule,
     TranslocoModule,
+    TranslocoCoreModule,
     HeaderComponent,
     FooterComponent,
   ],

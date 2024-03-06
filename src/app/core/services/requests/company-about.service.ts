@@ -13,42 +13,49 @@ import { SocialInterface } from "@shared/components/footer/interfaces/social.int
 import { GovernmentalSite } from "@shared/components/footer/interfaces/govSite.interface";
 import { ContactNumsInterface } from "@shared/components/footer/interfaces/contactNums.interface";
 import { DevelopingCompanyInfo } from "@core/interfaces/developingCompanyInfo/developingCompanyInfo";
+import { ChangeLanguageService } from "@core/services/requests/change-language.service";
 
 @Injectable({
   providedIn: "root",
 })
 export class CompanyAboutService {
   private readonly _http = inject(RequestService);
+  private _langChangeService = inject(ChangeLanguageService);
 
   public getLogos(): Observable<LogoInterface[]> {
     return this._http.get<LogoInterface[]>("/assets/mock-data", "logos.json");
   }
 
   public getAdds(): Observable<AdvertisementInterface[]> {
-    return this._http.get<AdvertisementInterface[]>(
-      "/assets/mock-data",
-      "ads.json"
+    return this._langChangeService.mapLanguageChanges(
+      this._http.get<AdvertisementInterface[]>("/assets/mock-data", "ads.json")
     );
   }
 
   public getCompanyInNums(): Observable<CompanyInNumsInterface[]> {
-    return this._http.get<CompanyInNumsInterface[]>(
-      "/assets/mock-data",
-      "company-in-nums.json"
+    return this._langChangeService.mapLanguageChanges(
+      this._http.get<CompanyInNumsInterface[]>(
+        "/assets/mock-data",
+        "company-in-nums.json"
+      )
     );
   }
 
   public getAdvantages(): Observable<IAdvantageInterface[]> {
-    return this._http.get<IAdvantageInterface[]>(
-      "/assets/mock-data",
-      "advantages.json"
+    return this._langChangeService.mapLanguageChanges(
+      this._http.get<IAdvantageInterface[]>(
+        "/assets/mock-data",
+        "advantages.json"
+      )
     );
   }
 
   public getSpecialOffers(): Observable<ISpecialOfferInterface[]> {
-    return this._http.get<ISpecialOfferInterface[]>(
-      "/assets/mock-data",
-      "special-offer.json"
+    return this._langChangeService.mapLanguageChanges(
+      this._http.get<ISpecialOfferInterface[]>(
+        "/assets/mock-data",
+        "special-offer.json"
+      )
     );
   }
 
@@ -71,9 +78,11 @@ export class CompanyAboutService {
   }
 
   public getGovSites(): Observable<GovernmentalSite[]> {
-    return this._http.get<GovernmentalSite[]>(
-      "/assets/mock-data",
-      "governmental-sites.json"
+    return this._langChangeService.mapLanguageChanges(
+      this._http.get<GovernmentalSite[]>(
+        "/assets/mock-data",
+        "governmental-sites.json"
+      )
     );
   }
 
